@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer | Python & FastAPI</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt; Backend Dev /&gt;</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section hero-section">
+            <div class="container grid-two-col">
+                
+                <!-- Left: Hero Overview -->
+                <div class="hero-content">
+                    <span class="badge"><span class="pulse"></span> Open for Backend Roles</span>
+                    <h1>Backend Systems Engineer</h1>
+                    <p class="lead-text">
+                        Designing high-throughput REST APIs, resilient microservices, and secure authentication pipelines.
+                    </p>
+
+                    <!-- Direct Click-to-Email Box -->
+                    <div class="contact-box">
+                        <span class="contact-label">Get in Touch:</span>
+                        <a href="mailto:your.email@gmail.com?subject=Backend%20Developer%20Inquiry" class="email-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>dev.yuvraj.in@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Code Snippet Box -->
+                <div class="code-card">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="file-name">developer_profile.py</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="keyword">from</span> pydantic <span class="keyword">import</span> BaseModel
+
+<span class="keyword">class</span> <span class="class-name">Developer</span>(BaseModel):
+    name: <span class="builtin">str</span> = <span class="string">"Backend Engineer"</span>
+    stack: <span class="builtin">list</span>[<span class="builtin">str</span>] = [
+        <span class="string">"Python"</span>, <span class="string">"FastAPI"</span>, <span class="string">"PostgreSQL"</span>,
+        <span class="string">"Redis"</span>, <span class="string">"SQLAlchemy"</span>, <span class="string">"Alembic"</span>, <span class="string">"uv"</span>
+    ]
+    status: <span class="builtin">str</span> = <span class="string">"Ready to build production grade systems 🚀"</span></code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Me Section (Dedicated Space to Express Yourself) -->
+        <!-- About Me Section -->
+<section id="about" class="section about-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-card">
+            <!-- Main Header -->
+            <h3 class="about-greeting">Hi, I'm <span class="text-highlight">Yuvraj Dave</span> 👋</h3>
+            
+            <!-- Lead Paragraph -->
+            <p class="about-intro">
+                I'm a backend developer who spends an unhealthy amount of time convincing APIs that <strong>500 Internal Server Error</strong> is not a personality trait. <em>Fortunately, they usually listen.</em>
+            </p>
+            
+            <!-- Core Focus -->
+            <p class="about-paragraph">
+                I enjoy building <strong>fast, scalable, and secure backend systems</strong> that solve real-world problems. Whether it's designing RESTful APIs, optimizing PostgreSQL queries that somehow turned into accidental stress tests, or making authentication behave exactly as it should, I genuinely enjoy the challenge of making systems reliable and efficient.
+            </p>
+
+            <!-- Tech Stack Focus -->
+            <p class="about-paragraph">
+                My primary stack includes <strong>Python</strong>, <strong>FastAPI</strong>, <strong>PostgreSQL</strong>, <strong>SQLAlchemy 2.0</strong>, <strong>Alembic</strong>, <strong>Redis</strong>, and <strong>uv</strong> for modern, high-performance development workflows. I'm passionate about writing clean, maintainable code, implementing secure authentication, and designing backend architectures that are built to scale.
+            </p>
+
+            <!-- Philosophy & Growth -->
+            <p class="about-paragraph">
+                Beyond coding, I'm constantly learning about <strong>system design, distributed systems, database optimization, and backend best practices</strong>. I enjoy exploring open-source projects, experimenting with new technologies, and sharpening my problem-solving skills—because there's always a better query to write or a cleaner architecture to build.
+            </p>
+
+            <!-- Highlighted Callout / Quote -->
+            <blockquote class="about-quote">
+                "I believe great backend development isn't just about making things work—it's about making them work efficiently, securely, and well enough that the frontend developer doesn't have to message me with <span>'Hey... is the API down?'</span> 😄"
+            </blockquote>
+        </div>
+    </div>
+</section>
+        <!-- Deployed Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Deployed Projects</h2>
+                
+                <div class="projects-list">
+                    
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <h3>External & API(Build with FastAPI)</h3>
+                                <span class="status-badge">Live Production</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://your-deployed-project.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Project
+                                </a>
+                                <a href="https://github.com/dev-yuvraj-in/Project_FullStack" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            A feature-rich web application that allows users to create accounts, securely verify their email using OTP, log in, generate AI images from text prompts, create personalized certificates by entering a name and achievement, and enjoy a fresh random joke on every request. The project follows a clean, modular architecture with separate API routes, secure authentication, and a responsive frontend connected to a cloud-hosted backend.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">SQLAlchemy</span>
+                            <span class="tag">Alembic</span>
+                            <span class="tag">uv</span>
+                        </div>
+                    </article>
+
+                        
+                    <br>
+<!--Second Card-->  
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div>
+                                <h3>Donation System</h3>
+                                <span class="status-badge">Live Production</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://dev-yuvraj-in.github.io/Website/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Project
+                                </a>
+                                <a href="https://github.com/dev-yuvraj-in/Website" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="project-description">
+                            A secure donation platform that allows users to contribute online, verifies payments, and instantly generates personalized donation certificates. Built with a clean, modular architecture for a reliable and seamless donation experience.
+                        </p>
+
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">RazorPay</span>
+                            <span class="tag">uv</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact Links -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <p>Interested in discussing backend systems or job opportunities?</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/yuvraj-dave-7445aa36a" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/dev-yuvraj-in" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
